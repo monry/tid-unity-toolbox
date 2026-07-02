@@ -1,0 +1,21 @@
+/* 日本語フォントの line-height を良い感じにしたい場合、以下の設定の何れかを効かすとマシになる
+:root {
+  -unity-font-definition: url("project://database/Assets/TextMesh Pro/Fonts/NotoSansJP-W400-Regular.ttf");
+}
+:root {
+  -unity-text-generator: Standard;
+}
+ */
+
+.tid-toolbox-property-drawer-serializable-dictionary MultiColumnListView > ScrollView {
+  /*noinspection CssUnresolvedCustomProperty*/
+  border-color: var(--unity-theme-border-color-4);
+  border-width: 1px;
+}
+
+.tid-toolbox-property-drawer-serializable-dictionary MultiColumnListView MultiColumnHeaderColumn#_value {
+  border-right-width: 0;
+}
+
+.unity-collection-view:focus:enabled {
+}

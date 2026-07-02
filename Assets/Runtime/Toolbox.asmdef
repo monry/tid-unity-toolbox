@@ -1,0 +1,16 @@
+{
+    "name": "Toolbox",
+    "rootNamespace": "Toolbox",
+    "references": [
+        "GUID:3e883d329c13e4f37a44990170ed59df"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

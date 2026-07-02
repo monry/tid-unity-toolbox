@@ -1,0 +1,18 @@
+{
+    "name": "Tid.Toolbox.Editor",
+    "rootNamespace": "Tid.Toolbox.Editor",
+    "references": [
+        "Tid.Toolbox"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

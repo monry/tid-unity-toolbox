@@ -1,0 +1,1 @@
+{"AdditionalImports":[{"Path":"Assets/Settings/CsprojModifier/LangVersion.props","Position":0},{"Path":"Assets/Settings/CsprojModifier/Nullable.props","Position":0}],"AdditionalImportsAdditionalProjects":["Tid.Toolbox.csproj","Tid.Toolbox.Editor.csproj"],"EnableAddAnalyzerReferences":false,"AddAnalyzerReferencesAdditionalProjects":[]}
