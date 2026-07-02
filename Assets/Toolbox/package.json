@@ -1,6 +1,12 @@
 {
-  "name": "jp.ac.tid.toolbox",
+  "name": "jp.ac.tid.unity-toolbox",
+  "displayName": "Unity Toolbox for TID",
   "version": "0.1.0",
   "unity": "6000.3",
-  "description": "東京情報デザイン専門職大学の Unity プロジェクトで用いる道具箱"
+  "description": "東京情報デザイン専門職大学の Unity プロジェクトで用いる道具箱",
+  "author": {
+    "name": "Tokyo Information Design Professional University",
+    "email": "",
+    "url": "https://www.tid.ac.jp/"
+  }
 }
