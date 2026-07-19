@@ -1,6 +1,7 @@
-namespace Tid.Toolbox.Editor;
-
-public static class Constants
+namespace Tid.Toolbox.Editor
 {
-    public const string PackageId = "jp.ac.tid.Toolbox";
+    public static class Constants
+    {
+        public const string PackageId = "jp.ac.tid.unity-toolbox";
+    }
 }

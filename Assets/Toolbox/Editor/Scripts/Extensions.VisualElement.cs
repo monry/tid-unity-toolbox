@@ -1,49 +1,51 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine.UIElements;
+// ReSharper disable PartialTypeWithSinglePart
 
-namespace Tid.Toolbox.Editor;
-
-public static partial class Extensions
+namespace Tid.Toolbox.Editor
 {
-    public static TElement? FindElementInParent<TElement>(this VisualElement element)
-        where TElement : VisualElement
+    public static partial class Extensions
     {
-        while (true)
+        public static TElement? FindElementInParent<TElement>(this VisualElement element)
+            where TElement : VisualElement
         {
-            element = element.parent;
-            switch (element)
+            while (true)
             {
-                case null:
-                    return null;
-                case TElement typedElement:
-                    return typedElement;
+                element = element.parent;
+                switch (element)
+                {
+                    case null:
+                        return null;
+                    case TElement typedElement:
+                        return typedElement;
+                }
             }
         }
-    }
 
-    public static IEnumerable<TElement> FindElementsInParent<TElement>(this VisualElement element)
-        where TElement : VisualElement
-    {
-        while (element != null)
+        public static IEnumerable<TElement> FindElementsInParent<TElement>(this VisualElement element)
+            where TElement : VisualElement
         {
-            element = element.parent;
-            if (element is TElement typedElement)
+            while (element != null)
             {
-                yield return typedElement;
+                element = element.parent;
+                if (element is TElement typedElement)
+                {
+                    yield return typedElement;
+                }
             }
         }
-    }
 
-    public static TElement? FindElementInChildren<TElement>(this VisualElement element)
-        where TElement : VisualElement
-    {
-        return element.FindElementsInChildren<TElement>().FirstOrDefault();
-    }
+        public static TElement? FindElementInChildren<TElement>(this VisualElement element)
+            where TElement : VisualElement
+        {
+            return element.FindElementsInChildren<TElement>().FirstOrDefault();
+        }
 
-    public static IEnumerable<TElement> FindElementsInChildren<TElement>(this VisualElement element)
-        where TElement : VisualElement
-    {
-        return element.Query<TElement>().ToList();
+        public static IEnumerable<TElement> FindElementsInChildren<TElement>(this VisualElement element)
+            where TElement : VisualElement
+        {
+            return element.Query<TElement>().ToList();
+        }
     }
 }

@@ -1,13 +1,14 @@
 using UnityEditor;
 using UnityEditor.PackageManager;
 
-namespace Tid.Toolbox.Editor;
-
-public static class EditorMenus
+namespace Tid.Toolbox.Editor
 {
-    [MenuItem("TID/Toolbox/Embed Package")]
-    private static void EmbedPackage()
+    public static class EditorMenus
     {
-        Client.Embed("jp.ac.tid.toolbox");
+        [MenuItem("TID/Toolbox/Embed Package")]
+        private static void EmbedPackage()
+        {
+            Client.Embed(Constants.PackageId);
+        }
     }
 }
